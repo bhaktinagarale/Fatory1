@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Management</title>
+  <link rel="stylesheet" href="orders.css">
+  
+</head>
+<body>
+ <main>
+<section class="our-order-table-container">
+  <header>
+    <h1>Orders</h1>
+  </header>
+  <div class="button-container">
+    <div class="addOrderButton">
+      <button class="btn">ADD</button>
+    </div>
+  </div>
+
+  <table id="orderTable" class="our-order-table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Season</th>
+        <th>Style</th>
+        <th>OrderNo</th>
+        <th>Buyer</th>
+        <th>Qty</th>
+        <th>Type</th>
+        <th>ExFacDate</th>
+        <th>Status</th>
+        <th>Owner</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--Rows will be here-->
+    </tbody>
+  </table>
+</section>
+
+<!--Form Popup-->
+<section class="popup" id="addOrderFormContainer">
+<header>
+  <h2>Add</h2>
+</header>
+<div class="close-btn" id="close-addOrderForm-button">&times;</div>
+  <form id="addOrderForm" class="form">
+    <div class="close-btn" id="close-addOrdersForm-button">&times;</div>
+    <form id="addOrdertrsForm" class="form">
+      <div class="form-element">
+        <label for="id">id</label>
+        <input type="text" id="id" name="id" required />
+    </div>
+
+
+        <div class="form-element">
+            <label for="Season">Season</label>
+            <input type="text" id="Season" name="Season" required />
+        </div>
+        <div class="form-element">
+            <label for="Style">Style</label>
+            <input type="text" id="Style" name="Style" required />
+        </div>
+        <div class="form-element">
+            <label for="OrderNo">OrderNo</label>
+            <input type="text" id="OrderNo" name="OrderNo" required />
+        </div>
+        <div class="form-element">
+            <label for="buyer">Buyer</label>
+            <input type="text" id="buyer" name="buyer" required />
+        </div>
+        <div class="form-element">
+            <label for="Qty">Qty</label>
+            <input type="text" id="Qty" name="Qty" required />
+        </div>
+        <div class="form-element">
+            <label for="ExFacDate">ExFacDate</label>
+            <input type="date" id="ExFacDate" name="ExFacDate" required />
+        </div>
+        <div class="form-element">
+            <label for="Type">Type</label>
+            <select id="Type" name="Type" required>
+                <option value="" disabled selected>Select a type</option>
+                <option value="wash">Wash</option>
+                <option value="non-wash">Non-Wash</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label for="Status">Status</label>
+            <input type="text" id="Status" name="Status" required />
+        </div>
+        <div class="form-element">
+            <label for="Owner">Owner</label>
+            <input type="email" id="Owner" name="Owner" required />
+        </div>
+        <div class="form-element">
+            <button type="submit" class="btn saveBtn">Save</button>
+        </div>
+  </form>
+
+</section>
+
+ </main>
+ 
+ 
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+ 
